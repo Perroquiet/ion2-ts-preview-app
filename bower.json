@@ -1,0 +1,21 @@
+{
+  "name": "ion2-ts-base",
+  "description": "ion2-ts-base: An Ionic project",
+  "main": "",
+  "authors": [
+    "Danielito Padayhag <Danielito.PadayhagJr@ghd.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}

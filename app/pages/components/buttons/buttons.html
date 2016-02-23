@@ -1,0 +1,12 @@
+<ion-navbar *navbar class="android-attr">
+  <ion-title>
+    Butttons
+  </ion-title>
+</ion-navbar>
+
+<ion-content>
+	<div class="section-padding">
+		<button [disabled]="buttonBusy" (click)="getData()"><i *ngIf="buttonBusy" class="fa fa-circle-o-notch fa-spin icon-mg-r"> </i> Get JSON Data</button>
+		<div>{{jsonData}}</div>
+	</div>
+</ion-content>

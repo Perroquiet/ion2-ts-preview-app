@@ -1,0 +1,15 @@
+<ion-navbar *navbar class="android-attr">
+  <ion-title>
+    Alerts
+  </ion-title>
+</ion-navbar>
+
+<ion-content>
+	<div class="section-padding">
+		<button block primary (click)="openBasic()">Show Basic Alert</button>
+		<button block secondary (click)="openPrompt()" class="android-attr">Show Prompt Alert</button>
+		<button block light (click)="openConfirm()">Show Confirm Alert</button>
+		<button block dark (click)="openRadio()">Show Radio Alert</button>
+		<button block danger (click)="openCheckbox()">Show Checkbox Alert</button>
+	</div>
+</ion-content>

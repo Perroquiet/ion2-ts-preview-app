@@ -1,0 +1,5 @@
+{
+  "directory" : "app/vendor",
+  "proxy": "http://gateway.ghd.zscaler.net:80/",
+  "https-proxy": "http://gateway.ghd.zscaler.net:80/"
+}

@@ -1,0 +1,30 @@
+<ion-navbar *navbar class="android-attr">
+  <ion-title>
+    Inputs
+  </ion-title>
+</ion-navbar>
+
+<ion-content>
+	<form [ngFormModel]="form">
+	<ion-list>
+		<ion-item>
+			<ion-label floating>Username</ion-label>
+			<ion-input type="text" ngControl="username"></ion-input>
+			<p *ngIf="username.pending">Fetching data from the server...</p>
+
+		</ion-item>
+		<div class="form-errors" *ngIf="username.dirty && !username.valid && !username.pending">
+		  <span class="form-error" *ngIf="username.errors.required">Username is required.</span>
+		  <span class="form-error" *ngIf="username.errors.startsWithNumber">Your username can't start with a number</span>
+		  <span class="form-error" *ngIf="username.errors.usernameTaken">This username is taken</span>
+		</div>
+		<ion-item>
+			<ion-label floating>Password</ion-label>
+			<ion-input type="password"></ion-input>
+		</ion-item>
+		<ion-item>
+			<button (click)="submitData()" class="btn btn-primary">Sumbit data</button>
+		</ion-item>
+	</ion-list>
+	</form>
+</ion-content>
