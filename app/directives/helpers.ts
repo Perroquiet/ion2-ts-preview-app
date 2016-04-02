@@ -1,5 +1,5 @@
 import {Directive, ElementRef, Renderer} from 'angular2/core';
-import {Platform, Navbar} from 'ionic-framework/ionic';
+import {Platform, Navbar} from 'ionic-angular';
 
 @Directive({
 	selector: '.android-attr',
@@ -33,8 +33,8 @@ export function hasScrollbar() {
 	// Check overflow style property on body for fauxscrollbars
 	var overflowStyle;
 
-	if (typeof rootElem.currentStyle !== 'undefined') {
-		overflowStyle = rootElem.currentStyle.overflow;
+	if (typeof rootElem.style !== 'undefined') {
+		overflowStyle = rootElem.style.overflow;
 	}
 
 	overflowStyle = overflowStyle || window.top.getComputedStyle(rootElem, '').overflow;
@@ -42,8 +42,8 @@ export function hasScrollbar() {
 	// Also need to check the Y axis overflow
 	var overflowYStyle;
 
-	if (typeof rootElem.currentStyle !== 'undefined') {
-		overflowYStyle = rootElem.currentStyle.overflowY;
+	if (typeof rootElem.style !== 'undefined') {
+		overflowYStyle = rootElem.style.overflowY;
 	}
 
 	overflowYStyle = overflowYStyle || window.top.getComputedStyle(rootElem, '').overflowY;
