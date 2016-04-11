@@ -6,7 +6,7 @@ import {AlertComponent} from '../../shared/components/alerts/alerts';
 import {InputPage} from  '../../shared/components/inputs/inputs';
 import {ButtonPage} from '../../shared/components/buttons/buttons';
 
-import {CameraPluginPage} from '../../shared/plugins/camera/camera.plugin';
+import {CameraPluginPage} from '../../shared/cordova/camera/camera.plugin';
 
 @Page({
   templateUrl: 'build/pages/page3/page3.html'
