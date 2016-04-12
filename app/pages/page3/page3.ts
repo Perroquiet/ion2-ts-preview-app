@@ -6,7 +6,7 @@ import {AlertComponent} from '../../shared/components/alerts/alerts';
 import {InputPage} from  '../../shared/components/inputs/inputs';
 import {ButtonPage} from '../../shared/components/buttons/buttons';
 
-import {CameraPluginPage} from '../../shared/cordova/camera/camera.plugin';
+//import {CameraPluginPage} from '../../shared/plugins/camera/camera.plugin';
 
 @Page({
   templateUrl: 'build/pages/page3/page3.html'
@@ -19,7 +19,6 @@ export class Page3 {
 			{ title: 'Alerts', page: AlertComponent },
 			{ title: 'Inputs', page: InputPage },
 			{ title: 'Buttons', page: ButtonPage },
-			{ title: 'Camera', page: CameraPluginPage},
 			{ title: 'Cards', page: Page2 },
 			{ title: 'Menus', page: Page2 },
 			{ title: 'Modals', page: Page2 },
